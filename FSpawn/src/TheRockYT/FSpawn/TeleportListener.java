@@ -11,8 +11,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
 @SuppressWarnings("deprecation")
-public class PlayerMoveListener implements Listener {
-
+public class TeleportListener implements Listener {
+	
 	@EventHandler
 	public void onMove(PlayerMoveEvent e) {
 		if (SpawnCommand.teleporters.contains(e.getPlayer().getUniqueId())) {

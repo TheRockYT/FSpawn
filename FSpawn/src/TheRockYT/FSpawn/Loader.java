@@ -22,7 +22,7 @@ public class Loader extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 		pjl = new PlayerJoinListener();
-		pml = new PlayerMoveListener();
+		pml = new TeleportListener();
 		Bukkit.getPluginManager().registerEvents(pjl, this);
 		Bukkit.getPluginManager().registerEvents(pml, this);
 		getCommand("setspawn").setExecutor(new SetSpawnCommand());
