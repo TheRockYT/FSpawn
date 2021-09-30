@@ -1,0 +1,14 @@
+name: FSpawn
+author: TheRockYT
+version: 1.0
+main: TheRockYT.FSpawn.Loader
+commands:
+  setspawn:
+  spawn:
+  warp:
+  setwarp:
+  delwarp:
+  delspawn:
+  deletewarp:
+  deletespawn:
+  fspawn:
