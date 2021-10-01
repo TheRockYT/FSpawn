@@ -9,6 +9,7 @@
 1. Change "TeleportMode" to 0=FirstJoin;1=Always;2=Never.
 2. Change some messages.
 ### Commands
-/spawn <NAME> - Teleports you to a spawn.\
-/setspawn <NAME> <PERMISSION> - Set a spawn.\
-/deletespawn <NAME> - Delete a spawn.
+/spawn <NAME> - Teleports you to a spawn. - Permission: *none/from setspawn*\
+/setspawn <NAME> <PERMISSION> - Set a spawn. - Permission: *FSpawn.SET*\
+/deletespawn <NAME> - Delete a spawn. - Permission: *FSpawn.DELETE*\
+/fspawn reload <NAME> - Reload the plugin. - Permission: *FSpawn.RELOAD*
