@@ -20,6 +20,7 @@ public class FSpawn {
 	public static File pdf = new File("plugins/FSpawn/playerdata.yml");
 	public static File cf = new File("plugins/FSpawn/config.yml");
 	public static File sf = new File("plugins/FSpawn/spawns.yml");
+	//FirstJoinCheck
 	public static void check(Player p) {
 		if(config.getInt("TeleportMode") == 0) {
 			if(containsLocation(spawns, "Spawn.default") && !teleportedUsers.contains(p.getUniqueId())) {
