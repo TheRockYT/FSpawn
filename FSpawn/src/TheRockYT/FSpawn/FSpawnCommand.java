@@ -14,7 +14,6 @@ public class FSpawnCommand implements CommandExecutor {
 				Loader.instance.reload();
 				sender.sendMessage(FSpawn.getMessage("Command.FSPAWN.RELOADED"));
 			}else {
-				//Command.FSPAWN.No_Permission_RELOAD
 				sender.sendMessage(FSpawn.getMessage("Command.FSPAWN.No_Permission_RELOAD"));
 			}
 		} else {
