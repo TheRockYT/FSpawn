@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FSpawn">
+    <output-path>$PROJECT_DIR$/out/artifacts/FSpawn</output-path>
+    <root id="archive" name="FSpawn.jar">
+      <element id="module-output" name="FSpawn" />
+    </root>
+  </artifact>
+</component>
