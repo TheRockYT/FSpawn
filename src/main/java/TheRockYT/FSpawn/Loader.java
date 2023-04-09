@@ -16,6 +16,7 @@ public class Loader extends JavaPlugin {
 
 	Listener pjl;
 	Listener pml;
+	Listener psl;
 	public static Loader instance;
 
 	@Override
@@ -23,8 +24,10 @@ public class Loader extends JavaPlugin {
 		instance = this;
 		pjl = new PlayerJoinListener();
 		pml = new TeleportListener();
+		psl = new PlayerSpawnListener();
 		Bukkit.getPluginManager().registerEvents(pjl, this);
 		Bukkit.getPluginManager().registerEvents(pml, this);
+		Bukkit.getPluginManager().registerEvents(psl, this);
 		getCommand("setspawn").setExecutor(new SetSpawnCommand());
 		getCommand("setwarp").setExecutor(new SetSpawnCommand());
 		getCommand("spawn").setExecutor(new SpawnCommand());
@@ -49,6 +52,7 @@ public class Loader extends JavaPlugin {
 			FSpawn.userdata = YamlConfiguration.loadConfiguration(FSpawn.pdf);
 			FSpawn.config = YamlConfiguration.loadConfiguration(FSpawn.cf);
 			FSpawn.config.options().header("FSpawn by TheRockYT! Teleport modes: 0=FirstJoin;1=Always;2=Never, 20 Ticks = 1 Second, Permissions: SET=FSpawn.SET;DELETE=FSpawn.DELETE;RELOAD=FSpawn.RELOAD");
+			FSpawn.config.addDefault("TeleportOnRespawn", false);
 			FSpawn.config.addDefault("TeleportMode", 0);
 			FSpawn.config.addDefault("TeleportDelay", 3*20);
 			FSpawn.config.addDefault("Command.No_Player", "&eF&6Spawn &e>> &cYou must be a Player!");
