@@ -15,9 +15,8 @@ public class PlayerSpawnListener implements Listener {
     @EventHandler
     public void onPlayerSpawn(PlayerRespawnEvent event) {
         if(config.getBoolean("TeleportOnRespawn")){
-            Player player = event.getPlayer();
             Location location = getLocation(spawns, "Spawn.default");
-            player.teleport(location);
+            event.setRespawnLocation(location);
         }
     }
 }
