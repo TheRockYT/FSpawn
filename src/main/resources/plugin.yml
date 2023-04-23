@@ -1,6 +1,6 @@
 name: FSpawn
 author: TheRockYT
-version: 2.1
+version: 2.2
 main: TheRockYT.FSpawn.Loader
 commands:
   setspawn:
